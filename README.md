@@ -1,1 +1,1 @@
-aria2
+aria2_docker
