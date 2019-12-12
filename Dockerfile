@@ -1,9 +1,8 @@
 FROM centos:7
 # aria2 
-RUN cd /root \
-    && yum install -y wget curl crontab yum-cron httpd git
-RUN git clone https://github.com/Weicoz/aria2_docker.git /root/aria2 \
-    && bash /root/aria2/install_aria2.sh
+RUN yum install -y wget curl crontab yum-cron httpd git
+COPY /aria2 /root/aria2
+RUN cd /root/ && bash /root/aria2/install_aria2.sh
 RUN yum clean headers \
     && yum clean packages \
     && yum clean metadata
