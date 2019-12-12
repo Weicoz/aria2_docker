@@ -6,7 +6,7 @@ mkdir /root/aria2
 chmod -R 755 /root/aria2
 #
 # 从git上下载webui-aria2 UI端
-git clone https://github.com/ziahamza/webui-aria2 /root/aria2
+git clone https://github.com/ziahamza/webui-aria2 /root/aria2/webui-aria2
 mv /root/aria2/webui-aria2/ /var/www/html/
 #
 # 创建下载目录
