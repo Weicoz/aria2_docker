@@ -22,7 +22,7 @@ cd /root/aria2
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/aria2.sh && chmod +x aria2.sh
 #
 # 安装 aria2
-echo -e "1\ny\n\n"| bash /root/ssrexp/aria2.sh
+echo -e "1\ny\n\n"| bash /root/aria2/aria2.sh
 #
 # 添加自动移动脚本
 echo "seed-time=1" >> /root/.aria2/aria2.conf
